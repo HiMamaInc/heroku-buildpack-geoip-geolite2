@@ -19,8 +19,12 @@ The GeoLite2 databases are distributed under the Creative Commons Attribution-Sh
 ### Heroku
 
 ```sh
-$ heroku buildpacks:add https://github.com/danstiner/heroku-buildpack-geoip-geolite2.git
+$ heroku buildpacks:add https://github.com/HiMamaInc/heroku-buildpack-geoip-geolite2.git
 ```
+
+### Required Environment Variables
+
+Please add `MAXMIND_LICENSE_KEY` environment variable to settings, as per [MaxMind's blog post](https://blog.maxmind.com/2019/12/18/significant-changes-to-accessing-and-using-geolite2-databases/)
 
 ### Django GeoIP2
 
